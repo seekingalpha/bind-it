@@ -1,11 +1,9 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path('../lib', __FILE__)
 
-require 'bind-it'
-
 Gem::Specification.new do |s|
   s.name        = 'bind-it'
-  s.version     = BindIt::VERSION
+  s.version     = '0.2.7'
   s.authors     = ['Louis Mullie']
   s.email       = ['louis.mullie@gmail.com']
   s.homepage    = 'https://github.com/louismullie/bind-it'
@@ -19,7 +17,7 @@ Gem::Specification.new do |s|
   if RUBY_PLATFORM =~ /java/
     s.platform = 'java'
   else
-    s.add_runtime_dependency 'rjb', '~>1.4.3'
+    s.add_runtime_dependency 'rjb', '~>1'
   end
       
 end
